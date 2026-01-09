@@ -1,0 +1,490 @@
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.archlinux.org>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+[New Thread 0x7ffff16f66c0 (LWP 210422)]
+[New Thread 0x7fffe84236c0 (LWP 210423)]
+[New Thread 0x7fffe7c226c0 (LWP 210424)]
+[New Thread 0x7fffdd1ff6c0 (LWP 210425)]
+[New Thread 0x7fffdc9fe6c0 (LWP 210426)]
+[New Thread 0x7fffca1ff6c0 (LWP 210427)]
+[New Thread 0x7fffc99fe6c0 (LWP 210428)]
+[New Thread 0x7fffc91fd6c0 (LWP 210429)]
+[New Thread 0x7fffc89fc6c0 (LWP 210430)]
+[Thread 0x7fffc89fc6c0 (LWP 210430) exited]
+[Thread 0x7fffc91fd6c0 (LWP 210429) exited]
+[Thread 0x7fffc99fe6c0 (LWP 210428) exited]
+[Thread 0x7fffca1ff6c0 (LWP 210427) exited]
+[New Thread 0x7fffca1ff6c0 (LWP 210432)]
+[New Thread 0x7fffc99fe6c0 (LWP 210433)]
+
+Thread 1 "python3" received signal SIGSEGV, Segmentation fault.
+0x00007fffe4686752 in blitz_start_ping () from /home/sriv/Downloads/CN-WHATEVER/src/libblitzping.so
+
+Thread 12 (Thread 0x7fffc99fe6c0 (LWP 210433) "Thread (pooled)"):
+#0  0x00007ffff749f042 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#1  0x00007ffff74931ac in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#2  0x00007ffff749381c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#3  0x00007ffff74960e8 in pthread_cond_timedwait () from /usr/lib/libc.so.6
+No symbol table info available.
+#4  0x00007ffff65351c5 in QWaitCondition::wait(QMutex*, QDeadlineTimer) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#5  0x00007ffff64906fa in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#6  0x00007ffff6530ca9 in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#7  0x00007ffff74969cb in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#8  0x00007ffff751aa0c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+
+Thread 11 (Thread 0x7fffca1ff6c0 (LWP 210432) "Thread (pooled)"):
+#0  0x00007ffff749f042 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#1  0x00007ffff74931ac in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#2  0x00007ffff749381c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#3  0x00007ffff74960e8 in pthread_cond_timedwait () from /usr/lib/libc.so.6
+No symbol table info available.
+#4  0x00007ffff65351c5 in QWaitCondition::wait(QMutex*, QDeadlineTimer) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#5  0x00007ffff64906fa in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#6  0x00007ffff6530ca9 in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#7  0x00007ffff74969cb in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#8  0x00007ffff751aa0c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+
+Thread 6 (Thread 0x7fffdc9fe6c0 (LWP 210426) "python3:sh0"):
+#0  0x00007ffff749f042 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#1  0x00007ffff74931ac in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#2  0x00007ffff749381c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#3  0x00007ffff7495ede in pthread_cond_wait () from /usr/lib/libc.so.6
+No symbol table info available.
+#4  0x00007fffdd76761e in ?? () from /usr/lib/libgallium-25.2.6-arch1.1.so
+No symbol table info available.
+#5  0x00007fffdd72057d in ?? () from /usr/lib/libgallium-25.2.6-arch1.1.so
+No symbol table info available.
+#6  0x00007fffdd76754d in ?? () from /usr/lib/libgallium-25.2.6-arch1.1.so
+No symbol table info available.
+#7  0x00007ffff74969cb in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#8  0x00007ffff751aa0c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+
+Thread 5 (Thread 0x7fffdd1ff6c0 (LWP 210425) "python3:disk$0"):
+#0  0x00007ffff749f042 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#1  0x00007ffff74931ac in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#2  0x00007ffff749381c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#3  0x00007ffff7495ede in pthread_cond_wait () from /usr/lib/libc.so.6
+No symbol table info available.
+#4  0x00007fffdd76761e in ?? () from /usr/lib/libgallium-25.2.6-arch1.1.so
+No symbol table info available.
+#5  0x00007fffdd72057d in ?? () from /usr/lib/libgallium-25.2.6-arch1.1.so
+No symbol table info available.
+#6  0x00007fffdd76754d in ?? () from /usr/lib/libgallium-25.2.6-arch1.1.so
+No symbol table info available.
+#7  0x00007ffff74969cb in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#8  0x00007ffff751aa0c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+
+Thread 4 (Thread 0x7fffe7c226c0 (LWP 210424) "WaylandEventThr"):
+#0  0x00007ffff749f042 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#1  0x00007ffff74931ac in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#2  0x00007ffff74931f4 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#3  0x00007ffff750d4ee in poll () from /usr/lib/libc.so.6
+No symbol table info available.
+#4  0x00007ffff1762d35 in ?? () from /usr/lib/qt6/plugins/platforms/../../../libQt6WaylandClient.so.6
+No symbol table info available.
+#5  0x00007ffff6530ca9 in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#6  0x00007ffff74969cb in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#7  0x00007ffff751aa0c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+
+Thread 3 (Thread 0x7fffe84236c0 (LWP 210423) "WaylandEventThr"):
+#0  0x00007ffff749f042 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#1  0x00007ffff74931ac in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#2  0x00007ffff74931f4 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#3  0x00007ffff750d4ee in poll () from /usr/lib/libc.so.6
+No symbol table info available.
+#4  0x00007ffff1762d35 in ?? () from /usr/lib/qt6/plugins/platforms/../../../libQt6WaylandClient.so.6
+No symbol table info available.
+#5  0x00007ffff6530ca9 in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#6  0x00007ffff74969cb in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#7  0x00007ffff751aa0c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+
+Thread 2 (Thread 0x7ffff16f66c0 (LWP 210422) "QDBusConnection"):
+#0  0x00007ffff749f042 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#1  0x00007ffff74931ac in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#2  0x00007ffff74931f4 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#3  0x00007ffff750da36 in ppoll () from /usr/lib/libc.so.6
+No symbol table info available.
+#4  0x00007ffff6908784 in ?? () from /usr/lib/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007ffff6908865 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007ffff664a9d2 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#7  0x00007ffff6375a86 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#8  0x00007ffff648af7e in QThread::exec() () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#9  0x00007ffff357963e in ?? () from /usr/lib/libQt6DBus.so.6
+No symbol table info available.
+#10 0x00007ffff6530ca9 in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#11 0x00007ffff74969cb in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#12 0x00007ffff751aa0c in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+
+Thread 1 (Thread 0x7ffff7e6abc0 (LWP 210419) "python3"):
+#0  0x00007fffe4686752 in blitz_start_ping () from /home/sriv/Downloads/CN-WHATEVER/src/libblitzping.so
+No symbol table info available.
+#1  0x00007ffff7f87ac6 in ?? () from /usr/lib/libffi.so.8
+No symbol table info available.
+#2  0x00007ffff7f8476b in ?? () from /usr/lib/libffi.so.8
+No symbol table info available.
+#3  0x00007ffff7f8706e in ffi_call () from /usr/lib/libffi.so.8
+No symbol table info available.
+#4  0x00007ffff7e1f1bd in ?? () from /usr/lib/python3.13/lib-dynload/_ctypes.cpython-313-x86_64-linux-gnu.so
+No symbol table info available.
+#5  0x00007ffff7e1cec3 in ?? () from /usr/lib/python3.13/lib-dynload/_ctypes.cpython-313-x86_64-linux-gnu.so
+No symbol table info available.
+#6  0x00007ffff79620cb in _PyObject_MakeTpCall () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#7  0x00007ffff797697a in _PyEval_EvalFrameDefault () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#8  0x00007ffff79d1b5d in ?? () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#9  0x00007ffff6bc84ba in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtCore.abi3.so
+No symbol table info available.
+#10 0x00007ffff6bcf389 in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtCore.abi3.so
+No symbol table info available.
+#11 0x00007ffff63d760b in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#12 0x00007ffff1a3b176 in ?? () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#13 0x00007ffff1a3b6d5 in ?? () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#14 0x00007ffff1a48c0f in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#15 0x00007ffff229b0c4 in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtWidgets.abi3.so
+No symbol table info available.
+#16 0x00007ffff195d9c7 in QWidget::event(QEvent*) () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#17 0x00007ffff229bcac in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtWidgets.abi3.so
+No symbol table info available.
+#18 0x00007ffff19020a0 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#19 0x00007ffff1903ce2 in QApplication::notify(QObject*, QEvent*) () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#20 0x00007ffff22c8ff7 in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtWidgets.abi3.so
+No symbol table info available.
+#21 0x00007ffff636a6c8 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#22 0x00007ffff18f8028 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#23 0x00007ffff1978086 in ?? () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#24 0x00007ffff1978d1b in ?? () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#25 0x00007ffff19020a0 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#26 0x00007ffff22c8ff7 in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtWidgets.abi3.so
+No symbol table info available.
+#27 0x00007ffff636a6c8 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#28 0x00007ffff29a8498 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) () from /usr/lib/libQt6Gui.so.6
+No symbol table info available.
+#29 0x00007ffff2a2cf2c in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt6Gui.so.6
+No symbol table info available.
+#30 0x00007ffff2a2d108 in QWindowSystemInterface::flushWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt6Gui.so.6
+No symbol table info available.
+#31 0x00007ffff63c4554 in QObject::event(QEvent*) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#32 0x00007ffff19020a0 in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQt6Widgets.so.6
+No symbol table info available.
+#33 0x00007ffff22c8ff7 in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtWidgets.abi3.so
+No symbol table info available.
+#34 0x00007ffff636a6c8 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#35 0x00007ffff636aab2 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#36 0x00007ffff664db18 in ?? () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#37 0x00007ffff6906f8d in ?? () from /usr/lib/libglib-2.0.so.0
+No symbol table info available.
+#38 0x00007ffff6908657 in ?? () from /usr/lib/libglib-2.0.so.0
+No symbol table info available.
+#39 0x00007ffff6908865 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+No symbol table info available.
+#40 0x00007ffff664a9d2 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#41 0x00007ffff6375a86 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#42 0x00007ffff636f171 in QCoreApplication::exec() () from /usr/lib/libQt6Core.so.6
+No symbol table info available.
+#43 0x00007ffff22c4f4c in ?? () from /usr/lib/python3.13/site-packages/PyQt6/QtWidgets.abi3.so
+No symbol table info available.
+#44 0x00007ffff7996213 in ?? () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#45 0x00007ffff79620cb in _PyObject_MakeTpCall () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#46 0x00007ffff797697a in _PyEval_EvalFrameDefault () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#47 0x00007ffff7a4e2c9 in PyEval_EvalCode () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#48 0x00007ffff7a8c88c in ?? () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#49 0x00007ffff7a8985d in ?? () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#50 0x00007ffff7a86f58 in ?? () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#51 0x00007ffff7a86212 in ?? () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#52 0x00007ffff7a85b83 in ?? () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#53 0x00007ffff7a83e51 in Py_RunMain () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#54 0x00007ffff7a3bbeb in Py_BytesMain () from /usr/lib/libpython3.13.so.1.0
+No symbol table info available.
+#55 0x00007ffff7427675 in ?? () from /usr/lib/libc.so.6
+No symbol table info available.
+#56 0x00007ffff7427729 in __libc_start_main () from /usr/lib/libc.so.6
+No symbol table info available.
+#57 0x0000555555555045 in _start ()
+No symbol table info available.
+From                To                  Syms Read   Shared Object Library
+0x00007ffff7fc3000  0x00007ffff7fec575  Yes (*)     /lib64/ld-linux-x86-64.so.2
+0x00007ffff783a040  0x00007ffff7b05573  Yes (*)     /usr/lib/libpython3.13.so.1.0
+0x00007ffff74243c0  0x00007ffff7595bd9  Yes (*)     /usr/lib/libc.so.6
+0x00007ffff7e7b080  0x00007ffff7f05808  Yes (*)     /usr/lib/libm.so.6
+0x00007ffff7e0f020  0x00007ffff7e1f6ae  Yes (*)     /usr/lib/python3.13/lib-dynload/_ctypes.cpython-313-x86_64-linux-gnu.so
+0x00007ffff7f82040  0x00007ffff7f8802a  Yes (*)     /usr/lib/libffi.so.8
+0x00007ffff7e01020  0x00007ffff7e0599e  Yes (*)     /usr/lib/python3.13/lib-dynload/_struct.cpython-313-x86_64-linux-gnu.so
+0x00007ffff7dc7020  0x00007ffff7dc823f  Yes (*)     /usr/lib/python3.13/lib-dynload/_opcode.cpython-313-x86_64-linux-gnu.so
+0x00007ffff6a47040  0x00007ffff6bd5b39  Yes (*)     /usr/lib/python3.13/site-packages/PyQt6/QtCore.abi3.so
+0x00007ffff6291040  0x00007ffff6679978  Yes (*)     /usr/lib/libQt6Core.so.6
+0x00007ffff5e97040  0x00007ffff5febb73  Yes         /usr/lib/libstdc++.so.6
+0x00007ffff5ad8040  0x00007ffff5cd5932  Yes (*)     /usr/lib/libicui18n.so.76
+0x00007ffff5648040  0x00007ffff575e707  Yes (*)     /usr/lib/libicuuc.so.76
+0x00007ffff68c6040  0x00007ffff696c9a3  Yes (*)     /usr/lib/libglib-2.0.so.0
+0x00007ffff7db0020  0x00007ffff7dbdca0  Yes (*)     /usr/lib/libz.so.1
+0x00007ffff60ef040  0x00007ffff61b1541  Yes (*)     /usr/lib/libsystemd.so.0
+0x00007ffff76ec040  0x00007ffff76f84fe  Yes (*)     /usr/lib/libdouble-conversion.so.3
+0x00007ffff76ce020  0x00007ffff76e40fd  Yes (*)     /usr/lib/libb2.so.1
+0x00007ffff762e040  0x00007ffff769e1f6  Yes (*)     /usr/lib/libpcre2-16.so.0
+0x00007ffff5927040  0x00007ffff59ec7f2  Yes (*)     /usr/lib/libzstd.so.1
+0x00007ffff6cd7040  0x00007ffff6cf9865  Yes         /usr/lib/libgcc_s.so.1
+                                        Yes (*)     /usr/lib/libicudata.so.76
+0x00007ffff5870040  0x00007ffff58ed607  Yes (*)     /usr/lib/libpcre2-8.so.0
+0x00007ffff7622040  0x00007ffff7626e56  Yes (*)     /usr/lib/libcap.so.2
+0x00007ffff5db6040  0x00007ffff5df0003  Yes         /usr/lib/libgomp.so.1
+0x00007ffff6889040  0x00007ffff689d9a0  Yes (*)     /usr/lib/python3.13/site-packages/PyQt6/sip.cpython-313-x86_64-linux-gnu.so
+0x00007ffff324c040  0x00007ffff33a02cc  Yes (*)     /usr/lib/python3.13/site-packages/PyQt6/QtGui.abi3.so
+0x00007ffff28e4040  0x00007ffff2faae77  Yes (*)     /usr/lib/libQt6Gui.so.6
+0x00007ffff72f0040  0x00007ffff72f92b8  Yes (*)     /usr/lib/libEGL.so.1
+0x00007ffff5822040  0x00007ffff585265e  Yes (*)     /usr/lib/libfontconfig.so.1
+0x00007ffff54d6040  0x00007ffff556938e  Yes (*)     /usr/lib/libX11.so.6
+0x00007ffff355d040  0x00007ffff35df1b7  Yes (*)     /usr/lib/libQt6DBus.so.6
+0x00007ffff5467040  0x00007ffff5493b5a  Yes (*)     /usr/lib/libxkbcommon.so.0
+0x00007ffff6855020  0x00007ffff686ef92  Yes (*)     /usr/lib/libGLX.so.0
+0x00007ffff60c4020  0x00007ffff60c44b8  Yes (*)     /usr/lib/libOpenGL.so.0
+0x00007ffff350e040  0x00007ffff3536ced  Yes (*)     /usr/lib/libpng16.so.16
+0x00007ffff26d5040  0x00007ffff27c4ef3  Yes (*)     /usr/lib/libharfbuzz.so.0
+0x00007ffff683f020  0x00007ffff684db8e  Yes (*)     /usr/lib/libmd4c.so.0
+0x00007ffff3136040  0x00007ffff31cda54  Yes (*)     /usr/lib/libfreetype.so.6
+0x00007ffff2651040  0x00007ffff2653207  Yes (*)     /usr/lib/libGLdispatch.so.0
+0x00007ffff5d83040  0x00007ffff5da0b7b  Yes (*)     /usr/lib/libexpat.so.1
+0x00007ffff34ab020  0x00007ffff34be89e  Yes (*)     /usr/lib/libxcb.so.1
+0x00007ffff260a040  0x00007ffff263a0e8  Yes (*)     /usr/lib/libdbus-1.so.3
+0x00007ffff310f040  0x00007ffff3127553  Yes (*)     /usr/lib/libgraphite2.so.3
+0x00007ffff60a5020  0x00007ffff60b1913  Yes (*)     /usr/lib/libbz2.so.1.0
+0x00007ffff6095040  0x00007ffff609d95a  Yes (*)     /usr/lib/libbrotlidec.so.1
+0x00007ffff7da9020  0x00007ffff7da9df3  Yes (*)     /usr/lib/libXau.so.6
+0x00007ffff7619020  0x00007ffff761a81d  Yes (*)     /usr/lib/libXdmcp.so.6
+0x00007ffff25da020  0x00007ffff25daba8  Yes (*)     /usr/lib/libbrotlicommon.so.1
+0x00007ffff2083040  0x00007ffff23038e4  Yes (*)     /usr/lib/python3.13/site-packages/PyQt6/QtWidgets.abi3.so
+0x00007ffff18ea040  0x00007ffff1dcb748  Yes (*)     /usr/lib/libQt6Widgets.so.6
+0x00007ffff6ccd020  0x00007ffff6cce389  Yes (*)     /usr/lib/python3.13/lib-dynload/fcntl.cpython-313-x86_64-linux-gnu.so
+0x00007ffff5816020  0x00007ffff5818419  Yes (*)     /usr/lib/python3.13/lib-dynload/_posixsubprocess.cpython-313-x86_64-linux-gnu.so
+0x00007ffff580d020  0x00007ffff580f463  Yes (*)     /usr/lib/python3.13/lib-dynload/select.cpython-313-x86_64-linux-gnu.so
+0x00007ffff34f8040  0x00007ffff3500d2f  Yes (*)     /usr/lib/python3.13/lib-dynload/math.cpython-313-x86_64-linux-gnu.so
+0x00007ffff6cc8020  0x00007ffff6cc844a  Yes (*)     /usr/lib/qt6/plugins/platforms/libqwayland.so
+0x00007ffff1756040  0x00007ffff17c69e7  Yes (*)     /usr/lib/qt6/plugins/platforms/../../../libQt6WaylandClient.so.6
+0x00007ffff34e9040  0x00007ffff34ef1ed  Yes (*)     /usr/lib/qt6/plugins/platforms/../../../libwayland-client.so.0
+0x00007ffff34de020  0x00007ffff34dfabc  Yes (*)     /usr/lib/qt6/plugins/platforms/../../../libwayland-cursor.so.0
+0x00007ffff348e020  0x00007ffff34963e2  Yes (*)     /usr/lib/qt6/plugins/wayland-shell-integration/libxdg-shell.so
+0x00007ffff2493040  0x00007ffff24c67a3  Yes (*)     /usr/lib/qt6/plugins/platformthemes/KDEPlasmaPlatformTheme6.so
+0x00007ffff1fb1040  0x00007ffff1fbc2ba  Yes (*)     /usr/lib/libQt6QuickControls2.so.6
+0x00007ffff0e15040  0x00007ffff0ebf63f  Yes (*)     /usr/lib/libKF6KIOFileWidgets.so.6
+0x00007ffff0ce2040  0x00007ffff0d9f813  Yes (*)     /usr/lib/libKF6KIOWidgets.so.6
+0x00007ffff0c3a040  0x00007ffff0c818b0  Yes (*)     /usr/lib/libKF6KIOGui.so.6
+0x00007ffff1f6a040  0x00007ffff1f98573  Yes (*)     /usr/lib/libKF6StatusNotifierItem.so.6
+0x00007ffff0b78040  0x00007ffff0bf3ef9  Yes (*)     /usr/lib/libKF6XmlGui.so.6
+0x00007ffff0b03040  0x00007ffff0b36018  Yes (*)     /usr/lib/libKF6WindowSystem.so.6
+0x00007ffff34d2040  0x00007ffff34d785e  Yes (*)     /usr/lib/libXcursor.so.1
+0x00007ffff030c040  0x00007ffff076f1cc  Yes (*)     /usr/lib/libQt6Quick.so.6
+0x00007ffff09ad040  0x00007ffff0aaea1f  Yes (*)     /usr/lib/libKF6KIOCore.so.6
+0x00007ffff093f040  0x00007ffff0966ddf  Yes (*)     /usr/lib/libKF6JobWidgets.so.6
+0x00007ffff01a3040  0x00007ffff01f200d  Yes (*)     /usr/lib/libKF6Service.so.6
+0x00007ffff016b040  0x00007ffff018868f  Yes (*)     /usr/lib/libKF6Completion.so.6
+0x00007ffff008e040  0x00007ffff0111d02  Yes (*)     /usr/lib/libKF6CoreAddons.so.6
+0x00007ffff0043040  0x00007ffff006470e  Yes (*)     /usr/lib/libKF6IconThemes.so.6
+0x00007ffff0027040  0x00007ffff0032c6a  Yes (*)     /usr/lib/libKF6ColorScheme.so.6
+0x00007fffebfd7040  0x00007fffebff4ab8  Yes (*)     /usr/lib/libKF6ConfigGui.so.6
+0x00007fffebf69040  0x00007fffebfb4620  Yes (*)     /usr/lib/libKF6ConfigCore.so.6
+0x00007fffebf0a040  0x00007fffebf3b321  Yes (*)     /usr/lib/libKF6GuiAddons.so.6
+0x00007fffebe87040  0x00007fffebee772c  Yes (*)     /usr/lib/libKF6I18n.so.6
+0x00007fffebc72040  0x00007fffebd48ff1  Yes (*)     /usr/lib/libKF6WidgetsAddons.so.6
+0x00007fffeb88a040  0x00007fffeb9c4bb3  Yes (*)     /usr/lib/libQt6QuickTemplates2.so.6
+0x00007fffeb28c040  0x00007fffeb680ef8  Yes (*)     /usr/lib/libQt6Qml.so.6
+0x00007fffebbcc040  0x00007fffebbf45aa  Yes (*)     /usr/lib/libKF6ItemViews.so.6
+0x00007ffff0012040  0x00007ffff001a434  Yes (*)     /usr/lib/libKF6IconWidgets.so.6
+0x00007fffebba5040  0x00007fffebbb0021  Yes (*)     /usr/lib/libKF6BookmarksWidgets.so.6
+0x00007fffebad8040  0x00007fffebb613e8  Yes (*)     /usr/lib/libKF6Solid.so.6
+0x00007fffebaa8040  0x00007fffebab6e83  Yes (*)     /usr/lib/libKF6Bookmarks.so.6
+0x00007fffeba82040  0x00007fffeba97a0c  Yes (*)     /usr/lib/libQt6Xml.so.6
+0x00007fffeb068040  0x00007fffeb1979a8  Yes (*)     /usr/lib/libQt6Network.so.6
+0x00007fffeb7d7040  0x00007fffeb7f5ea3  Yes (*)     /usr/lib/libKF6GlobalAccel.so.6
+0x00007fffeafe6040  0x00007fffeb012ed0  Yes (*)     /usr/lib/libKF6ConfigWidgets.so.6
+0x00007fffeaf73040  0x00007fffeafadfdf  Yes (*)     /usr/lib/libQt6PrintSupport.so.6
+0x00007ffff5807020  0x00007ffff5807bba  Yes (*)     /usr/lib/libxcb-res.so.0
+0x00007ffff3107020  0x00007ffff31098aa  Yes (*)     /usr/lib/libXfixes.so.3
+0x00007ffff34cb020  0x00007ffff34cb8b6  Yes (*)     /usr/lib/libxcb-keysyms.so.1
+0x00007ffff1f52040  0x00007ffff1f58563  Yes (*)     /usr/lib/libXrender.so.1
+0x00007fffeb7b1040  0x00007fffeb7c4d84  Yes (*)     /usr/lib/libQt6QmlMeta.so.6
+0x00007fffeae68040  0x00007fffeaf1fd92  Yes (*)     /usr/lib/libQt6QmlModels.so.6
+0x00007fffeadbc040  0x00007fffeae1821e  Yes (*)     /usr/lib/libQt6OpenGL.so.6
+0x00007fffeba6e040  0x00007fffeba74c25  Yes (*)     /usr/lib/libKF6Crash.so.6
+0x00007fffeb7a0020  0x00007fffeb7a3ce3  Yes (*)     /usr/lib/libacl.so.1
+0x00007fffead4e040  0x00007fffead87ee2  Yes (*)     /usr/lib/libmount.so.1
+0x00007fffead0f040  0x00007fffead377d3  Yes (*)     /usr/lib/libKF6Notifications.so.6
+0x00007fffeacd4040  0x00007fffeace8e04  Yes (*)     /usr/lib/libKF6Codecs.so.6
+0x00007fffeac8b040  0x00007fffeacb38f1  Yes (*)     /usr/lib/libudev.so.1
+0x00007fffeac4b040  0x00007fffeac7b622  Yes (*)     /usr/lib/libKF6Archive.so.6
+0x00007fffe9201020  0x00007fffe92012c7  Yes (*)     /usr/lib/libKF6BreezeIcons.so.6
+0x00007fffeac07040  0x00007fffeac2a793  Yes (*)     /usr/lib/libimobiledevice-1.0.so.6
+0x00007fffeb786040  0x00007fffeb797a73  Yes (*)     /usr/lib/libplist-2.0.so.4
+0x00007fffeabb1040  0x00007fffeabed7bf  Yes (*)     /usr/lib/libgssapi_krb5.so.2
+0x00007ffff3480020  0x00007ffff3480251  Yes (*)     /usr/lib/libproxy.so.1
+0x00007fffe8c52040  0x00007fffe8fdc883  Yes (*)     /usr/lib/libcrypto.so.3
+0x00007fffeab9c040  0x00007fffeaba3c9a  Yes (*)     /usr/lib/libQt6QmlWorkerScript.so.6
+0x00007fffeab62040  0x00007fffeab868cd  Yes (*)     /usr/lib/libblkid.so.1
+0x00007fffeab4e040  0x00007fffeab5774f  Yes (*)     /usr/lib/libcanberra.so.0
+0x00007fffeab1b040  0x00007fffeab3dddb  Yes (*)     /usr/lib/liblzma.so.5
+0x00007fffe8b2d040  0x00007fffe8bcdcbe  Yes (*)     /usr/lib/libssl.so.3
+0x00007fffeab0f020  0x00007fffeab12ec6  Yes (*)     /usr/lib/libusbmuxd-2.0.so.7
+0x00007fffeaafc040  0x00007fffeab069bf  Yes (*)     /usr/lib/libimobiledevice-glue-1.0.so.0
+0x00007fffe8a64040  0x00007fffe8ace7c3  Yes (*)     /usr/lib/libkrb5.so.3
+0x00007fffe91d6040  0x00007fffe91f177c  Yes (*)     /usr/lib/libk5crypto.so.3
+0x00007ffff3101020  0x00007ffff3101c91  Yes (*)     /usr/lib/libcom_err.so.2
+0x00007fffeaaed040  0x00007fffeaaf3534  Yes (*)     /usr/lib/libkrb5support.so.0
+0x00007ffff2475020  0x00007ffff2476382  Yes (*)     /usr/lib/libkeyutils.so.1
+0x00007fffeaada040  0x00007fffeaae26da  Yes (*)     /usr/lib/libresolv.so.2
+0x00007fffe91c7020  0x00007fffe91cc8e2  Yes (*)     /usr/lib/libproxy/libpxbackend-1.0.so
+0x00007fffe8a00040  0x00007fffe8a36d03  Yes (*)     /usr/lib/libgobject-2.0.so.0
+0x00007fffe91bc040  0x00007fffe91c0ba0  Yes (*)     /usr/lib/libvorbisfile.so.3
+0x00007fffe91a5040  0x00007fffe91b2070  Yes (*)     /usr/lib/libtdb.so.1
+0x00007fffe9198020  0x00007fffe919c69f  Yes (*)     /usr/lib/libltdl.so.7
+0x00007fffe8919040  0x00007fffe89c7bae  Yes (*)     /usr/lib/libcurl.so.4
+0x00007fffe876d040  0x00007fffe888b042  Yes (*)     /usr/lib/libgio-2.0.so.0
+0x00007fffe86f5020  0x00007fffe872857b  Yes (*)     /usr/lib/libduktape.so.207
+0x00007fffe86c4040  0x00007fffe86dbe9d  Yes (*)     /usr/lib/libvorbis.so.0
+0x00007fffe918e040  0x00007fffe91907ee  Yes (*)     /usr/lib/libogg.so.0
+0x00007fffe869e040  0x00007fffe86b19b3  Yes (*)     /usr/lib/libnghttp3.so.9
+0x00007fffe8678040  0x00007fffe868bcfa  Yes (*)     /usr/lib/libnghttp2.so.14
+0x00007fffe8654020  0x00007fffe86574aa  Yes (*)     /usr/lib/libidn2.so.0
+0x00007fffe860d040  0x00007fffe8642050  Yes (*)     /usr/lib/libssh2.so.1
+0x00007fffe917a020  0x00007fffe917bc62  Yes (*)     /usr/lib/libpsl.so.5
+0x00007ffff092b020  0x00007ffff092c1a3  Yes (*)     /usr/lib/libgmodule-2.0.so.0
+0x00007fffe8433040  0x00007fffe84769fe  Yes (*)     /usr/lib/libunistring.so.5
+0x00007ffff1ff8020  0x00007ffff1ffb032  Yes (*)     /usr/lib/qt6/plugins/wayland-graphics-integration-client/libqt-plugin-wayland-egl.so
+0x00007ffff1feb020  0x00007ffff1feb1e9  Yes (*)     /usr/lib/qt6/plugins/wayland-graphics-integration-client/../../../libwayland-egl.so.1
+0x00007fffe72d57e0  0x00007fffe736b3c4  Yes (*)     /usr/lib/libEGL_nvidia.so.0
+0x00007ffff1fe6020  0x00007ffff1fe60f5  Yes (*)     /usr/lib/libpthread.so.0
+0x00007ffff1fe1020  0x00007ffff1fe1230  Yes (*)     /usr/lib/librt.so.1
+0x00007ffff1fdc020  0x00007ffff1fdc0f5  Yes (*)     /usr/lib/libdl.so.2
+0x00007fffe7215780  0x00007fffe7274601  Yes (*)     /usr/lib/libnvidia-glsi.so.580.95.05
+0x00007ffff1fca040  0x00007ffff1fd3e20  Yes (*)     /usr/lib/libnvidia-egl-wayland.so.1
+0x00007fffe71f5040  0x00007fffe71fd06d  Yes (*)     /usr/lib/libwayland-server.so.0
+0x00007fffe71de040  0x00007fffe71e9812  Yes (*)     /usr/lib/libdrm.so.2
+0x00007fffe5242d40  0x00007fffe5f04721  Yes (*)     /usr/lib/libnvidia-eglcore.so.580.95.05
+0x00007fffd3cabea0  0x00007fffd6d97e61  Yes (*)     /usr/lib/libnvidia-gpucomp.so.580.95.05
+0x00007fffeba63040  0x00007fffeba65528  Yes (*)     /usr/lib/libnvidia-egl-gbm.so.1
+0x00007ffff0002020  0x00007ffff0002e5a  Yes (*)     /usr/lib/libgbm.so.1
+0x00007fffe4ff0040  0x00007fffe4ff9ec7  Yes (*)     /usr/lib/libnvidia-egl-xcb.so.1
+0x00007ffff1fc3020  0x00007ffff1fc3cba  Yes (*)     /usr/lib/libxcb-present.so.0
+0x00007fffe4fe8020  0x00007fffe4fe93f0  Yes (*)     /usr/lib/libxcb-dri3.so.0
+0x00007fffe4fd5040  0x00007fffe4fdf2b7  Yes (*)     /usr/lib/libnvidia-egl-xlib.so.1
+0x00007fffebe72020  0x00007fffebe7210f  Yes (*)     /usr/lib/libX11-xcb.so.1
+0x00007fffe4f88040  0x00007fffe4fb1b43  Yes (*)     /usr/lib/libEGL_mesa.so.0
+0x00007fffdd219040  0x00007fffdecb1363  Yes (*)     /usr/lib/libgallium-25.2.6-arch1.1.so
+0x00007fffe4f77020  0x00007fffe4f7c147  Yes (*)     /usr/lib/libxcb-randr.so.0
+0x00007fffe4f6a020  0x00007fffe4f6caba  Yes (*)     /usr/lib/libxcb-xfixes.so.0
+0x00007fffe718a020  0x00007fffe718abc8  Yes (*)     /usr/lib/libxcb-shm.so.0
+0x00007fffca73e040  0x00007fffcff56853  Yes (*)     /usr/lib/libLLVM.so.21.1
+0x00007fffe4dd5040  0x00007fffe4eee9f3  Yes (*)     /usr/lib/libSPIRV-Tools.so
+0x00007fffe4db2040  0x00007fffe4db9303  Yes (*)     /usr/lib/libsensors.so.5
+0x00007fffe4daa020  0x00007fffe4dac376  Yes (*)     /usr/lib/libxcb-sync.so.1
+0x00007fffe4da3020  0x00007fffe4da33b0  Yes (*)     /usr/lib/libxshmfence.so.1
+0x00007fffe4d98040  0x00007fffe4d9d4ca  Yes (*)     /usr/lib/libdrm_amdgpu.so.1
+0x00007fffe4d7c040  0x00007fffe4d8ee15  Yes (*)     /usr/lib/libelf.so.1
+0x00007fffe4d57040  0x00007fffe4d6d348  Yes (*)     /usr/lib/libdrm_intel.so.1
+0x00007fffe4d20040  0x00007fffe4d40475  Yes (*)     /usr/lib/libedit.so.0
+0x00007fffe4bff040  0x00007fffe4cd1676  Yes (*)     /usr/lib/libxml2.so.16
+0x00007fffe4bdc020  0x00007fffe4be0410  Yes (*)     /usr/lib/libpciaccess.so.0
+0x00007fffe4b78040  0x00007fffe4bbe9a9  Yes (*)     /usr/lib/libncursesw.so.6
+0x00007fffe46a6040  0x00007fffe4713f50  Yes (*)     /usr/lib/qt6/plugins/styles/breeze6.so
+0x00007fffe4618040  0x00007fffe463f1df  Yes (*)     /usr/lib/libKirigamiPlatform.so.6
+0x00007fffe73ea020  0x00007fffe73ee61a  Yes (*)     /usr/lib/libKF6Style.so.6
+0x00007fffe46864e0  0x00007fffe4689a44  Yes (*)     /home/sriv/Downloads/CN-WHATEVER/src/libblitzping.so
+0x00007fffe4257900  0x00007fffe42939bc  Yes (*)     /usr/local/lib/librte_ethdev.so.25
+0x00007fffe4678380  0x00007fffe467e12d  Yes (*)     /usr/local/lib/librte_mbuf.so.25
+0x00007fffe466d480  0x00007fffe4671b9e  Yes (*)     /usr/local/lib/librte_mempool.so.25
+0x00007fffe41499c0  0x00007fffe4182859  Yes (*)     /usr/local/lib/librte_eal.so.25
+0x00007fffe4660020  0x00007fffe4665c1b  Yes (*)     /usr/lib/libnuma.so.1
+0x00007fffe45fc020  0x00007fffe4600e03  Yes (*)     /usr/lib/libfdt.so.1
+0x00007fffe46580b0  0x00007fffe4658769  Yes (*)     /usr/local/lib/librte_kvargs.so.25
+0x00007fffe45f4380  0x00007fffe45f6271  Yes (*)     /usr/local/lib/librte_log.so.25
+0x00007fffe44af380  0x00007fffe44b3ce3  Yes (*)     /usr/local/lib/librte_telemetry.so.25
+0x00007fffe45e8140  0x00007fffe45ec10a  Yes (*)     /usr/local/lib/librte_net.so.25
+0x00007fffe4499280  0x00007fffe44a8b95  Yes (*)     /usr/local/lib/librte_ring.so.25
+0x00007fffe4653040  0x00007fffe46538f6  Yes (*)     /usr/local/lib/librte_meter.so.25
+0x00007fffe4486020  0x00007fffe4490926  Yes (*)     /usr/lib/libbsd.so.0
+0x00007fffe406f040  0x00007fffe410f9fb  Yes (*)     /usr/lib/libarchive.so.13
+0x00007fffe4475020  0x00007fffe447da9c  Yes (*)     /usr/lib/libmd.so.0
+0x00007fffe4451040  0x00007fffe446e09e  Yes (*)     /usr/lib/liblz4.so.1
+(*): Shared library is missing debugging information.
